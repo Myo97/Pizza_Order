@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Loading -->
+   <div class="loading" style=" display: flex; justify-content: center; align-items: center; background-color: white; height: 100vh; width: 100%; position: fixed; z-index: 2000;">
+    <div class="loader">Loading...</div>
+    </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>PizzaHub</title>
+    <!-- Primary Meta Tags -->
+<title>Pizza Hub</title>
+<meta name="title" content="Pizza Hub">
+<meta name="description" content="Did  you feel boring your daily food? Now Pizza Hub is here. Ultimate pizza is coming up for you. Lets visit PizzaHub and Pizza are waiting for you. ">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://insanewebdesgin.000webhostapp.com/pizza/">
+<meta property="og:title" content="Pizza Hub">
+<meta property="og:description" content="Did  you feel boring your daily food? Now Pizza Hub is here. Ultimate pizza is coming up for you. Lets visit PizzaHub and Pizza are waiting for you. ">
+<meta property="og:image" content="img/pizza.svg">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/fontAwsome/all.min.css">
+    <link rel="stylesheet" href="vendor/animate_it/animate.css">
+    <link rel="stylesheet" href="css/style.css">    
+
+
+    <style>
+        .loader {
+          position: absolute;
+          z-index: 2001;
+          color: #ffa023;
+          font-size: 90px;
+          text-indent: -9999em;
+          overflow: hidden;
+          width: 1em;
+          height: 1em;
+          border-radius: 50%;
+          margin: 72px auto;
+          position: relative;
+          -webkit-transform: translateZ(0);
+          -ms-transform: translateZ(0);
+          transform: translateZ(0);
+          -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+          animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+        }
+        @-webkit-keyframes load6 {
+          0% {
+            box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+          }
+          5%,
+          95% {
+            box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+          }
+          10%,
+          59% {
+            box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+          }
+          20% {
+            box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+          }
+          38% {
+            box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+          }
+          100% {
+            box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+          }
+        }
+        @keyframes load6 {
+          0% {
+            box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+          }
+          5%,
+          95% {
+            box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+          }
+          10%,
+          59% {
+            box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+          }
+          20% {
+            box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+          }
+          38% {
+            box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+          }
+          100% {
+            box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+          }
+        }
+        @-webkit-keyframes round {
+          0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+          }
+          100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+          }
+        }
+        @keyframes round {
+          0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+          }
+          100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+          }
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <header class="container-fluid site-nav px-0 animate__animated animate__fadeInDown animate__delay-1-5s">
+        <div class="container px-0">
+            <div class="row px-0">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-dark d-flex justify-content-between align-items-center">
+                        <a class="navbar-brand animate__animated animate__fadeIn animate__delay-1s" href="#">
+                            <img src="img/FOOD.HUB.svg" alt="">
+                        </a>
+                        <button class="navbar-toggler border-0 animate__animated animate__fadeIn animate__delay-1s" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars text-warning h3 menu-btn"></i>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                          <ul class="navbar-nav animate__animated animate__fadeIn animate__delay-1s">
+                            <li class="nav-item active">
+                              <a class="nav-link text-uppercase" href="#about">about <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-uppercase" href="#food">our food</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" href="#plans">plans</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-uppercase" href="#contact">contact us</a>
+                              </li>
+                          </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- section1 -->
+    <section class="container-fluid about vh-100 animate__animated animate__fadeIn animate__delay-1s" id="about">
+        <div class="container">
+            <div class="row justify-content-center align-items-end align-items-lg-center align-items-md-end vh-100">
+                <div class="col-12 col-lg-6">
+                    <div class="py-5 px-1 s1-textbox animate__animated animate__fadeIn animate__delay-2s">
+                        <h1 class="text-black">
+                            Have no time
+                            <br>
+                            to prepare food?
+                        </h1>
+                        <p class="mb-5">Choose one of our plans, enter delivery time
+                            and enjoy delicious food without leaving your home!</p>
+                        <button class="btn btn-warning rounded-pill">Order Food</button>
+                    </div>
+                </div>
+                <div class="col-6 d-none d-lg-block"></div>
+            </div>
+        </div>
+        <div class="d-flex social-v animate__animated animate__rotateInDownLeft animate__delay-2-5s" >
+            <a href="#">
+                <i class="social-icon fab fa-facebook-f p-1 rounded-circle text-warning bg-white"></i>
+            </a>
+            <a href="#">
+                <i class="social-icon fab fa-twitter p-1 rounded-circle text-warning bg-white"></i>
+            </a>
+            <a href="#">
+                <i class="social-icon fab fa-google-plus-g p-1 rounded-circle text-warning bg-white"></i>
+            </a>
+            <a href="#">
+                <i class="social-icon fab fa-instagram p-1 rounded-circle text-warning bg-white"></i>
+            </a>
+        </div>
+    </section>
+    <!-- section2 -->
+    <section class="vh-100 container-fluid food" id="food">
+        <div class="row align-items-center justify-content-between vh-100">
+            <div class="col-12 col-lg-6 pl-0">
+                <img src="img/section2_1.svg" class="img-fluid wow animate__fadeInUp s2-img" alt="">
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="row">
+                    <div class="d-none d-lg-block col-lg-2"></div>
+                    <div class="col-12 col-lg-7">
+                        <div class="s2-textbox wow animate__fadeInUp animate__delay-0-5s">
+                            <h1 class="text-uppercase">Our food</h1>
+                            <div class="underline mb-5" style="width: 150px;"></div>
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-plus-circle text-warning h2 mr-2"></i>
+                                <div>
+                                    <h5>Signature Pizzas</h5>
+                                    <p class="text-black-50">Choose one of our plans, enter delivery time.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-plus-circle text-warning h2 mr-2"></i>
+                                <div>
+                                    <h5>Oven-Baked Subs</h5>
+                                    <p class="text-black-50">Choose one of our plans, enter delivery time
+                                        and enjoy delicious food without leaving your home!</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start mb-2">
+                                <i class="fas fa-plus-circle text-warning h2 mr-2"></i>
+                                <div>
+                                    <h5>Wings, Sides & More</h5>
+                                    <p class="text-black-50">Choose one of our plans, enter delivery time.</p>
+                                </div>
+                            </div>
+                            <button class="btn btn-warning rounded-pill mb-3 wow animate__fadeIn animate__delay-1s">Order Food</button>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-block col-lg-3 rounded-pill"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section3 -->
+    <section class="container-fluid plans wow animate__fadeIn" id="plans">
+        <div class="container">
+            <div class="row vh-100">
+                <div class="col-12">
+                    <div class="mt-2 mt-lg-5 d-flex align-items-center flex-column wow animate__fadeInDown animate__delay-1-5s">
+                        <h1 class="text-uppercase text-black">plans</h1>
+                        <div class="underline" style="width: 75px; background-color: white;"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="mb-3 mycard wow  wow animate__fadeInLeft animate__delay-1s">
+                        <img src="img/section3_1.svg" class="img-fluid img-b-round left" alt="">
+                        <div class="text-warning s3-textbox-left"> 
+                            <h5 class="text-white text-black">FLAT<span class="text-warning" style="font-size: 50px;">20</span><span class="text-warning" style="font-size: 30px;">%</span> </h5>
+                            <h5 class="text-white text-black">Min. Order Value ₹300 </h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="mb-3 mycard wow  wow animate__fadeInRight animate__delay-0-5s">
+                        <img src="img/section3_2.svg" class="img-fluid img-b-round right" alt="">
+                        <div class="text-warning s3-textbox-right"> 
+                            <h4 class="text-white text-black mb-0">GET 2 MEDIUM</h4>
+                            <p class="text-warning mb-0" style="font-size: 30px;">PIZZA</p>
+                            <h5 class="text-white text-black">AT  ₹199 EACH </h5>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section4 -->
+    <section class="contact container" id="contact">
+        <div class="col-12 pt-5">
+            <div class="mb-5 d-flex align-items-center flex-column wow animate__fadeInUp animate__delay-1s">
+                <h1 class="text-uppercase text-black">Contact Us</h1>
+                <div class="underline" style="width: 150px;"></div>
+            </div>
+        </div>
+        <div class="row justify-content-between flex-column-reverse flex-md-row">
+            <div class="col-lg-4 col-md-5 col-12 mb-5">
+                <form action="#" class="custom-form wow animate__fadeInUp">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Message" class="form-control"></textarea>
+                    </div>
+                    <div class="form-check mb-5">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">I agree with all conditions</label>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <button type="submit" class="btn btn-outline-light font-weight-bold">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col--lg-8 col-md-7 col-12 mb-5">
+                <div class="s4-bg wow animate__fadeInUp animate__delay-0-5s">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3730.102177561875!2d97.03633616424108!3d20.78715380135978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ce86461810f2f5%3A0x5a4f914061a89762!2sMya%20Kan%20Thar%20Lake!5e0!3m2!1sen!2smm!4v1611913924963!5m2!1sen!2smm" width="100%" height="400px" frameborder="0" style="border-radius:10px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section5     -->
+    <section class="container-fluid footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 py-4 py-md-5 mt-0 mb-0 mt-md-3 mb-md-5">
+                    <img src="img/FOOD.HUB.svg" class="img-fluid wow animate__fadeInUp" alt="">
+                </div>
+                <div class="col-12 col-md-3 py-4 py-md-5 mt-0 mb-0 mt-md-3 mb-md-5">
+                    <div class="wow animate__fadeInUp animate__delay-0-5s">
+                       <p class="text-bold text-white">Contact Us</p>
+                        <a href="#" class="link">Lorem ipsum, #239, Tricity Plaza
+                            Peermuchalla. Zirakpur, Mohal</a> <br>
+                        <a href="#" class="link">Telephone: +91 99999-88888</a> <br>
+                        <a href="#" class="link">E-mail: myothetnaing@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 py-4 py-md-5 mt-0 mb-0 mt-md-3 mb-md-5">
+                    <div class="wow animate__fadeInUp animate__delay-1s">
+                        <p class="text-bold text-white">Menu</p>
+                        <a href="#about" class="link">About Us</a> <br>
+                        <a href="#food" class="link">Our Food</a> <br>
+                        <a href="#plans" class="link">Plans</a> <br>
+                        <a href="#contact" class="link">Contact Us</a> <br>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 py-4 py-md-5 mt-0 mb-0 mt-md-3 mb-md-5 wow animate__fadeInUp animate__delay-1-5s">
+                    <p class="text-bold text-white">Follow Us</p>
+                    <div class="d-flex bot-icon-group" >
+                        <a href="#">
+                            <i class="social-icon fab fa-facebook-f p-1 rounded-circle text-warning bg-white"></i>
+                        </a>
+                        <a href="#">
+                            <i class="social-icon fab fa-twitter p-1 rounded-circle text-warning bg-white"></i>
+                        </a>
+                        <a href="#">
+                            <i class="social-icon fab fa-google-plus-g p-1 rounded-circle text-warning bg-white"></i>
+                        </a>
+                        <a href="#">
+                            <i class="social-icon fab fa-instagram p-1 rounded-circle text-warning bg-white"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 text-white-50  wow animate__slideInUp animate__delay-2s">
+                    ©All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="vendor/jquery-3.3.1.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/way_point/jquery.waypoints.min.js"></script>
+    <script src="vendor/wow/wow.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>

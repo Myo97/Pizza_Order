@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap');
+*{
+    font-family: 'Asap', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.site-nav{
+   transition: 0.2s;
+   position: absolute;
+   top: 0;
+   z-index: 2000;
+}
+.site-nav-scroll{
+    background-color: #fff8efde;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    box-shadow: 0 0 5px #00000020;
+    z-index: 2000;
+    transition: 0.5s;
+    animation: navscroll 0.8s linear;
+}
+.site-nav-scroll .nav-item{
+
+}
+.site-nav-scroll .nav-link{
+    color: #000000 !important;
+}
+.nav-link.activeSection{
+    color: #000000 !important;
+    font-weight: bolder;
+    background-color: #ffab3a;
+}
+.navbar-nav{
+    width: 60%;
+    justify-content: space-between;
+}
+.navbar-toggler{
+
+}
+.navbar-toggler:focus {
+    outline: none;
+}
+.menu-btn{
+    
+}
+.nav-link{
+    color: #ffffff !important;
+    padding: 15px 25px !important;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.nav-link:hover{
+    padding: 13px 22px !important;
+    color: #000000 !important;
+    border: 3px solid #ffab3a;
+}
+.about{
+    background-image: url(../img/section1_1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+}
+.s1-textbox{
+    transition: 0.5s;
+    cursor: pointer;
+}
+.s1-textbox:hover{
+    transform: translateX(20px);
+}
+.social-v{
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+}
+.social-v a:hover{
+    text-decoration: none;
+}
+.food{
+    
+}
+.s2-img{
+    transition: 0.5s;
+}
+.s2-img:hover{
+    margin-left: 10px;
+}
+.s2-textbox{
+    transition: 0.5s;
+}
+.s2-textbox:hover{
+    transform: translateX(15px);
+}
+.underline{
+    height: 5px;
+    background-color: var(--warning);
+}
+.img-b-round{
+    border-radius: 30px;
+}
+
+.plans{
+    background-image: url(../img/section3_bg-2.svg), url(../img/section3_bg-1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.img-b-round.left{
+    transition: 0.5s;
+}
+.img-b-round.left:hover{
+    transform: scale(1.02);
+    transform: translateX(-10px);
+}
+.img-b-round.right{
+    transition: 0.5s;
+}
+.img-b-round.right:hover{
+    transform: scale(1.02);
+    transform: translateX(10px);
+}
+.s3-textbox-left{
+    position: absolute;
+    top: 170px;
+    right: 50px;
+    background-color: #00000020;
+    padding: 30px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.s3-textbox-right{
+    position: absolute;
+    top: 160px;
+    left: 50px;
+    background-color: #ffffff50;
+    padding: 30px;
+    border-radius: 10px;
+}
+.s4-bg{
+    transition: 0.5s;
+}
+.s4-bg:hover{
+    transform: translateY(-5px);
+}
+.custom-form{
+    background-image: url(../img/section3_bg-2.svg);
+    background-size: 300%;
+    background-repeat: no-repeat;
+    background-color: var(--warning);
+    padding: 75px 25px;
+    border-radius: 30px;
+    box-shadow: 0 0 5px #00000020;
+    transition: 0.5s;
+}
+.custom-form:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 5px #00000050;
+}
+.footer{
+    background-image: url(../img/section5_1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000000aa;
+}
+.bot-icon-group a:hover{
+    text-decoration: none;
+}
+.social-icon{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.social-icon:hover{
+    text-decoration: none;
+    transform: translateY(-10px);
+}
+.link{
+    color: #ffffff;
+    transition: 0.3s;
+}
+.link:hover{
+    color: var(--warning);
+    text-decoration: none;
+    margin-left: 10px;
+}
+.animate__delay-0-5s{
+    animation-delay: 0.5s;
+}
+.animate__delay-1-5s{
+    animation-delay: 1.5s;
+}
+.animate__delay-2-5s{
+    animation-delay: 2.5s;
+}
+.animate__delay-3-5s{
+    animation-delay: 3.5s;
+}
+.animate__delay-4-5s{
+    animation-delay: 4.5s;
+}
+@keyframes navscroll{
+    from{
+        transform: translateY(-200px);
+    }to{
+        transform: translateY(0);
+    }
+}
+@media Screen and (max-width: 1030px){
+    .site-nav{
+        background-color: #ffffffee;
+    }
+    .s3-textbox-left{
+        position: absolute;
+        top: 120px;
+        right: 50px;
+    }
+    .s3-textbox-right{
+        position: absolute;
+        top: 110px;
+        left: 50px;
+    }
+}
+@media Screen and (max-width: 780px){
+    .site-nav{
+        position: fixed;
+        top: 0;
+        z-index: 2000;
+        background-color: #fff7f7ee;
+        box-shadow: 0 0 #00000020;
+    }
+    .navbar-nav{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .nav-link{
+        color: black !important;
+        background-color: #ffffff;
+        margin-bottom: 5px;
+        box-shadow: 0 0 5px #00000030;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: bolder;
+    }
+    .nav-link:hover{
+        background-color: var(--warning);
+    }
+    .about{
+        background-size: 78%;
+        background-position: top right;
+    }
+    .s1-textbox{
+        margin-bottom: 110px;
+        background-color: #00000005;
+        box-shadow: 0 0 5px #00000020;
+        padding: 50px 20px !important;
+        border-radius: 10px;
+    }
+    .s2-textbox{
+        background-color: #00000005;
+        box-shadow: 0 0 5px #00000020;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+    .s3-textbox-left{
+        position: absolute;
+        top: 280px;
+        right: 50px;
+    }
+    .s3-textbox-right{
+        position: absolute;
+        top: 270px;
+        left: 50px;
+    }
+}
+@media screen and (max-width: 540px){
+    .about{
+        background-size: 113%;
+    }
+    .social-v{
+        left: 190px;
+        bottom: 31px;
+    }
+    .s1-textbox{
+        margin-bottom: 20px;
+    }
+    .s3-textbox-left{
+        position: static;
+        background-color: transparent;
+        padding: 0px;
+        border-radius: 0px;
+    }
+    .s3-textbox-right{
+        position: static;   
+        background-color: transparent;
+        padding: 0px;
+        border-radius: 0px;
+    }
+    .text-black{
+        color: black !important;
+    }
+    .img-b-round{
+        border-radius: 10px;
+    }
+    .mycard{
+        box-shadow: 0 0 10px #00000020;
+        padding: 20px;
+        background-color: #fafafa;
+        border-radius: 10px;
+    }
+}
